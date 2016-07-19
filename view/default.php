@@ -10,6 +10,7 @@ include '../view/template/enTete.php';
 include '../view/template/header.php';
 include '../view/template/nav.php';
 
+
 /*
  * Insertion du code d'affichage de la page de garde
  */

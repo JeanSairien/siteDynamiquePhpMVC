@@ -13,4 +13,52 @@
  */
 class News {
     //put your code here
+    private $ID;
+    
+    private $date;
+    private $sujet;
+    private $auteur;
+    private $titre;
+    
+    public function getID() {
+        return $this->ID;
+    }
+
+    public function getDate() {
+        return $this->date;
+    }
+
+    public function getSujet() {
+        return $this->sujet;
+    }
+
+    public function getAuteur() {
+        return $this->auteur;
+    }
+
+    public function getTitre() {
+        return $this->titre;
+    }
+
+    public function setID($ID) {
+        $this->ID = $ID;
+    }
+
+    public function setDate($date) {
+        $this->date = $date;
+    }
+
+    public function setSujet($sujet) {
+        $this->sujet = $sujet;
+    }
+
+    public function setAuteur($auteur) {
+        $this->auteur = $auteur;
+    }
+
+    public function setTitre($titre) {
+        $this->titre = $titre;
+    }
+
+
 }

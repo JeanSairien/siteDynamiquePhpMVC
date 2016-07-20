@@ -5,7 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-require '../models/factory.php';
+require '../models/viewFactory.php';
+require '../models/daoFactory.php';
 
 $valeurFromUrl = filter_input(INPUT_GET, 'view');
 
@@ -19,7 +20,11 @@ if(isset($newsAuteur)&&isset($newsDate)&&isset($newsSujet)&&isset($newsTitre)){
     insertNews($newsAuteur,$newsDate,$newsSujet,$newsTitre);
     getView('news');
 }
-
+/*
+ * Demande de vue !
+ */
 if(isset($valeurFromUrl)){
     getView($valeurFromUrl);
+    
+    
 }

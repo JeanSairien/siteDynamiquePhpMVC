@@ -29,7 +29,9 @@ function showAll($DB_HANDLE){
 function getNews(){
     return initDB()->query('SELECT * from news');
 }
-
+/*
+ * Insere une news en database
+ */
 function insertNews($auteur,$date,$sujet,$titre){
     $database = initDB();
     $database->beginTransaction();

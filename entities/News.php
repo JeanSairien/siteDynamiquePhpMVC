@@ -19,6 +19,7 @@ class News {
     private $sujet;
     private $auteur;
     private $titre;
+    public $tartempion;
     
     public function getID() {
         return $this->ID;
@@ -45,6 +46,7 @@ class News {
     }
 
     public function setDate($date) {
+        
         $this->date = $date;
     }
 
@@ -60,5 +62,8 @@ class News {
         $this->titre = $titre;
     }
 
+    public function getTitreAuteur(){
+        return $this->getTitre()+$this->getAuteur();
+    }
 
 }

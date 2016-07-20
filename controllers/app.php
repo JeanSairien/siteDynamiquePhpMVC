@@ -29,6 +29,8 @@ $contactCorps = filter_input(INPUT_POST, 'corps');
  * Ajout de news
  */
 if(isset($newsAuteur)&&isset($newsDate)&&isset($newsSujet)&&isset($newsTitre)){
+   
+    
     insertNews($newsAuteur,$newsDate,$newsSujet,$newsTitre);
     getView('news');
 }

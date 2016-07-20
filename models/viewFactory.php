@@ -6,14 +6,21 @@
  * and open the template in the editor.
  */
 function getView($vue){
-    switch ($vue) {
-        case 'default':            
-            return include '../view/default.php';
-        case 'news':
-            return include '../view/news.php';
-        case 'formNews':
-            return include '../view/formNews.php';
-        default:
-            break;
+    $path = '../view/'.$vue.'.php';
+    if(file_exists($path)){
+        return include '../view/'.$vue.'.php';
+    }else{
+        return include '../view/default.php';
     }
+    
+//    switch ($vue) {
+//        case 'default':            
+//            return include '../view/default.php';
+//        case 'news':
+//            return include '../view/news.php';
+//        case 'formNews':
+//            return include '../view/formNews.php';
+//        default:
+//            break;
+//    }
 }

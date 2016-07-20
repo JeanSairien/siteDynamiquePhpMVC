@@ -9,7 +9,7 @@ include '../view/template/enTete.php';
 include '../view/template/header.php';
 include '../view/template/nav.php';
 ?>
-<form  method="post" action="./app.php?view=formNews">
+<form  method="post" action="./app.php">
     <input type="text" name="titre" placeholder="titre"><br>
     <input type="text" name="auteur" placeholder="auteur"><br>
     <textarea name="sujet" placeholder="sujet" maxlength="512"></textarea> <br>  

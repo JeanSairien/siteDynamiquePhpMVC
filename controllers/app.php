@@ -17,6 +17,7 @@ $newsDate = filter_input(INPUT_POST, 'date');
 
 if(isset($newsAuteur)&&isset($newsDate)&&isset($newsSujet)&&isset($newsTitre)){
     insertNews($newsAuteur,$newsDate,$newsSujet,$newsTitre);
+    getView('news');
 }
 
 if(isset($valeurFromUrl)){

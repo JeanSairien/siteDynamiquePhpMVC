@@ -17,9 +17,19 @@ class News {
     
     private $date;
     private $sujet;
-    private $auteur;
+    private $auteur; //utilisateur
     private $titre;
-    public $tartempion;
+    
+    public function __construct(){
+        
+    }
+
+    public function setAll($sujet, $auteur, $titre) {
+        $this->sujet = $sujet;
+        $this->auteur = $auteur;
+        $this->titre = $titre;
+    }
+
     
     public function getID() {
         return $this->ID;
@@ -54,7 +64,7 @@ class News {
         $this->sujet = $sujet;
     }
 
-    public function setAuteur($auteur) {
+    public function setAuteur(Utilisateur $auteur) {
         $this->auteur = $auteur;
     }
 

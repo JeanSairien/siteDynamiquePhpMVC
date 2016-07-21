@@ -13,7 +13,6 @@ include '../view/template/nav.php';
     <input type="text" name="titre" placeholder="titre"><br>
     <input type="text" name="auteur" placeholder="auteur"><br>
     <textarea name="sujet" placeholder="sujet" maxlength="512"></textarea> <br>  
-    <input type="text" name="date" placeholder="yyyy-mm-dd"><br>
     <input type="submit" value="validez">
 </form>
 <?php

@@ -15,7 +15,7 @@
 			*/
 			
 			
-		$repertoirePages = opendir('../view');
+		$repertoirePages = opendir('view');
 		if($repertoirePages){
 			while(false !== ($fichier = readdir($repertoirePages))){
 				
@@ -23,7 +23,7 @@
 				//si il y a bien un nom de fichier
 				if(!empty($nomdufichier)){
 					//On fabrique notre lien de page
-					$sortie = '<li><a href="./app.php?view='.$nomdufichier.'">'.$nomdufichier.'</a></li>';
+					$sortie = '<li><a href="./controlllers/app.php?view='.$nomdufichier.'">'.$nomdufichier.'</a></li>';
 					echo $sortie;	
 				}
 				

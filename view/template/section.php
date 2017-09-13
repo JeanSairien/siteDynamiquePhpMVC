@@ -6,10 +6,10 @@
 	*/
 	//si la cl� page existe dans le tableau $_GET
 	if(isset($_GET['page'])){
-		include './template/pages/'.$_GET['page'].'.php';
+		include './template/'.$_GET['page'].'.php';
 
 	}else{
-		include './template/pages/home.php';
+		include '../template/home.php';
 	}
 
 

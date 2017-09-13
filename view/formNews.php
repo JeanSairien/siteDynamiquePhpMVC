@@ -5,9 +5,9 @@
  * and open the template in the editor.
  */
 
-include '../view/template/enTete.php';
-include '../view/template/header.php';
-include '../view/template/nav.php';
+include 'view/template/enTete.php';
+include 'view/template/header.php';
+include 'view/template/nav.php';
 ?>
 <form  method="post" action="./app.php">
     <input type="text" name="titre" placeholder="titre"><br>
@@ -19,4 +19,4 @@ include '../view/template/nav.php';
 /*
  * Insertion du code d'affichage de la page de garde
  */
-include '../view/template/footer.php';
+include 'view/template/footer.php';

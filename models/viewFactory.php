@@ -7,11 +7,11 @@
  */
 
 function getView($vue){
-    $path = '../view/'.$vue.'.php';
+    $path = 'view/'.$vue.'.php';
     if(file_exists($path)){
         return include $path;
     }else{
-        return include '../view/default.php';
+        return include 'view/default.php';
     }
 }
 
